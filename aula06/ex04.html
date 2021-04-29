@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template String</title>
+</head>
+
+<style>
+    body {
+        font: normal 25pt Arial;
+    }
+</style>
+<body>
+    <script>
+        var nome = (window.prompt('Qual é o seu nome?'))
+        nome = nome.toUpperCase(nome)
+        document.write(`Olá ${nome}. O seu nome tem ${nome.length} letras.`)
+        
+        var n1 = 1545.5
+        n1 = n1.toFixed(2)
+        
+        //n1.toFixed(2).replace('.', ',')
+        //document.write(`O número ${n1} foi fixado em duas casas depois da vírgula e substituido o ponto pela virgula`)
+
+        alert(n1) = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        
+
+    </script>
+    
+</body>
+</html>
