@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,17 +17,18 @@
     <script>
         function verificar()
         {
-            var pais = document.querySelector('input#txtpais')
+            var tpais = document.querySelector('input#txtpais')
             var resultado = document.querySelector('div#resultado')
+            var pais = String(tpais.value)
             resultado.innerHTML = `<p>Morando em ${pais} você é: </p>`
             
             if (resultado != "brasil")
             {
-                resultado.innerHTML += `<strong>ESTRANGEIRO</strong>`
+                resultado.innerHTML += `<strong>BRASILEIRO</strong>`
             }
             else
             {
-                resultado.innerHTML += `<strong>BRASILEIRO</strong>`
+                resultado.innerHTML += `<strong>ESTRANGEIRO</strong>`
             }
         }
 
